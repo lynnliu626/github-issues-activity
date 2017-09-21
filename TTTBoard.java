@@ -171,7 +171,9 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char rowWinner() {
-		return '\0';
+		if(row1winner()!="\0"){
+			return row1winner();
+		}
 	}
 
 	/**
